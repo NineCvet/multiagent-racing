@@ -1,0 +1,3 @@
+This paper introduces a multi-agent reinforcement learning approach in a racing environment, where the motor and steering actions of the race car are controlled by three types of agents: DDPG, DDQN, and DQN. The agents utilize sensory inputs such as LiDAR, position, velocity, and acceleration to replicate realistic driving dynamics. The goal is for agents to learn and adapt by competing with each other and interacting with their surroundings. Training improves performance, and the challenges of multi-agent systems, including communication and environment dynamics, are explored.
+
+For more details on the environment used, visit: racecar_gym
