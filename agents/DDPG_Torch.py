@@ -11,7 +11,7 @@ from agents.QNetwork import QNetwork
 # Defining the DDPG agent
 class DDPG:
     def __init__(self, state_keys, state_dim, action_dim, actor_hidden_sizes=(128, 64), critic_hidden_sizes=(128, 64),
-                 learning_rate=0.001, discount_factor=0.95, tau=0.005, batch_size=64, memory_size=100000,
+                 learning_rate=0.001, discount_factor=0.95, batch_size=4, memory_size=150000,
                  device=torch.device("cpu")):
 
         self.state_keys = state_keys
@@ -19,7 +19,6 @@ class DDPG:
         self.action_dim = action_dim
         self.learning_rate = learning_rate
         self.discount_factor = discount_factor
-        self.tau = tau
         self.batch_size = batch_size
         self.memory = deque(maxlen=memory_size)
 

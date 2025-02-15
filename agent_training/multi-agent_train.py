@@ -24,11 +24,6 @@ def create_agent(agent_id, state_keys, num_actions, state_size, device):
             state_keys=state_keys,
             state_dim=state_size,
             action_dim=num_actions,
-            learning_rate=0.001,
-            discount_factor=0.95,
-            tau=0.005,
-            batch_size=64,
-            memory_size=100000,
             actor_hidden_sizes=actor_hidden_sizes,
             critic_hidden_sizes=critic_hidden_sizes,
             device=device
